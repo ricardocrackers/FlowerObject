@@ -1,0 +1,27 @@
+flower f1;
+
+int r=60;
+float ballX;
+float ballY;
+
+void setup() {
+  size(700,700);
+  background(51);
+  
+  int _r1=60;
+  int _petals=7;
+  float _x=width/2;
+  float _y=height/2;
+  int _speed=2;
+  int _pc=#FF0000;
+  int _xDirect=1;
+  int _yDirect=1;
+  f1 = new flower(_r1,_petals,_x,_y,_pc,_speed,_xDirect,_yDirect);
+}
+
+void draw(){
+  f1.display();
+  f1.movebounce();
+}  
+
+  
